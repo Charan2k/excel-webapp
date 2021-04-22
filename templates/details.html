@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/table.css')}}">
+    <style>
+       
+    </style>
+    <title>Details</title>
+</head>
+<body>
+        <table class="details">
+            <tr>
+                <th>Name</th>
+                <th>Email ID</th>
+            </tr>
+            {% for i in range(length) %}
+            <tr> 
+                <td>{{names[i]}}</td>
+                <td>{{emails[i]}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        <a href="/"><input type="submit" value="Update" class="btn"></a>
+        <a href="/static/database/userfile.xlsx"><input type="button" value="Download" class="btn"></a>
+
+</body>
+</html>

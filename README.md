@@ -9,4 +9,4 @@ then perform the following steps:
 	Step2:
 		Now open your browser and go to : 127.0.0.1:5050/
 That's it.
-The webapp is now accessible for you. 
+The webapp is now accessible for you
